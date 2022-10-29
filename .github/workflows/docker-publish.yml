@@ -49,4 +49,4 @@ jobs:
           context: ./image-updater/source-code
           file: ./image-updater/source-code/Dockerfile
           push: true
-          tags: ghcr.io/codefresh-contrib:${{ inputs.docker_tag }}
+          tags: ghcr.io/nofearonline:${{ inputs.docker_tag }}
