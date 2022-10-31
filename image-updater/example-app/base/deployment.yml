@@ -18,6 +18,6 @@ spec:
       containers:
         - name: webserver-simple
           imagePullPolicy: Always
-          image: ghcr.io/nofearOnline/gitops-cert-level-2-examples:latest
+          image: ghcr.io/nofearonline/gitops-cert-level-2-examples:latest
           ports:
             - containerPort: 8080
