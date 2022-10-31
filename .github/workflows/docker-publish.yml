@@ -49,4 +49,4 @@ jobs:
           context: ./image-updater/source-code
           file: ./image-updater/source-code/Dockerfile
           push: true
-          tags: ghcr.io/nofearonline:${{ inputs.docker_tag }}
+          tags: ghcr.io/nofearonline/gitops-cert-level-2-examples:${{ inputs.docker_tag }}
