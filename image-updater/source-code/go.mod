@@ -1,3 +1,3 @@
-module github.com/codefresh-contrib/gitops-certification-examples/simple-web-app
+module github.com/nofearOnline/gitops-certification-examples/simple-web-app
 
 go 1.15
