@@ -8,11 +8,23 @@ metadata:
 spec:
   project: default
 
+  ignoreDifferences:
+    - group: apps
+      kind: Deployment
+      jsonPointers:
+        - /metadata/annotations/creation
+
+  ignoreDifferences:
+    - group: v1
+      kind: Secret
+      jsonPointers:
+        - /data/my-password
+
   source:
     repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
     targetRevision: HEAD
     path: ./custom-diff/02-external-app
-   
+
   destination:
     server: https://kubernetes.default.svc
     namespace: example02
@@ -20,5 +32,4 @@ spec:
   # Sync policy
   syncPolicy:
     syncOptions:
-      - CreateNamespace=true  
-   
+      - CreateNamespace=true
