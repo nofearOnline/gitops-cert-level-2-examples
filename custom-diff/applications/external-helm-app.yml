@@ -9,13 +9,11 @@ spec:
   project: default
 
   ignoreDifferences:
-    - group: apps
+   - group: apps
       kind: Deployment
       jsonPointers:
         - /metadata/annotations/creation
-
-  ignoreDifferences:
-    - group: v1
+    - group: ""
       kind: Secret
       jsonPointers:
         - /data/my-password
